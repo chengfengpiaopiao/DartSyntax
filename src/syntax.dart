@@ -6,4 +6,13 @@ void main(){
   double fee = src * feeRate;
 
   print(src-fee);
+  
+  print(_deleteTag("asdasda</bar>"));
+}
+
+String _deleteTag(htmlStr){
+  final newString = htmlStr.replaceAllMapped(new RegExp(r'<[^>]*>'), (match) {
+    return '';
+  });
+  return newString;
 }
