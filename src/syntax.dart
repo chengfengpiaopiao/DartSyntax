@@ -8,6 +8,8 @@ void main(){
   print(src-fee);
   
   print(_deleteTag("asdasda</bar>"));
+
+  _testBit();
 }
 
 String _deleteTag(htmlStr){
@@ -15,4 +17,10 @@ String _deleteTag(htmlStr){
     return '';
   });
   return newString;
+}
+
+void _testBit(){
+  int number = 10;
+  print(number<<1); // 20
+  print(number>>1); // 5
 }
