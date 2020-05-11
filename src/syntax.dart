@@ -15,6 +15,10 @@ void main(){
 //  print(srcDouble.toString().indexOf("."));
 //  print(srcDouble.toString().substring(1,4));
   print(_regxDouble(srcDouble));
+
+  String srcStr = "20200424\\bb473e51608e480b8c26a0327e8b8496.png";
+  var replaceAll = srcStr.replaceAll("\\", "/");
+  print(replaceAll);
 }
 
 
